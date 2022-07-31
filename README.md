@@ -155,6 +155,10 @@ Not adding/on hold:
 ## <a id="changelog"></a>💭 〢 ChangeLog
 
 ```diff
+v1.0.2 : 01-08-2022
++ updated exe builder to play nicely with nuitka
+- im losing my sanity
+
 v1.0.1 : 01-08-2022
 + nvm fuck pyarmor
 + i love nuitka (new obfuscator)
