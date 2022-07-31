@@ -14,7 +14,7 @@
 </p>
 
 <h2 align="center">
-  Cheesy was made with
+ Cheesy was made with
 
 K78 ❌ tesco ✅
 
