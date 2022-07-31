@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/eclipse-marketplace/last-update/cheesy?style=flat-square">
+  <img src="https://img.shields.io/github/last-commit/bananaman2020/cheesy?style=flat-square">
 </p>
 
 <h2 align="center">
