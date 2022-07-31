@@ -20,7 +20,7 @@ K78 ❌ tesco ✅
 </h2>
 
 **NOTE:** \
-Cheesy was made for educational purposes, therefor all consequences caused by your actions are **your** responsibility and accountability.
+Cheesy was made for educational purposes, therefore all consequences caused by your actions are **your** responsibility and accountability.
 
 
 ---
