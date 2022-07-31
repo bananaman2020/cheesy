@@ -104,7 +104,7 @@ config = {
 
 well as the new compiler is "Nuitka" it pretty much works by translating python into C++ which is a lengthy process though during my testing on a i7-10700k compiling takes around 5-10minutes
 
-you might think it being slower is a bad thing but time wise it is but in terms of security it prevents it being detected by AV
+you might think it being slower is a bad thing but it allows it to be more hidden and anonymous which will help it not be noticed 
 
 ## <a id="why_cheese"></a>🔎 〢 Why choose Cheesy?
 
