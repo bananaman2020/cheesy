@@ -11,12 +11,11 @@ if [%a%]==[] (
 if [%a%] NEQ [] (
     echo.
     echo Name is: %a%
-    pyinstaller --clean --onefile --noconsole -i NONE -n %a% main.py
+    python -m nuitka main.py --onefile --standalone --disable-console --remove-output -o %a%.exe
     rmdir /s /q __pycache__
     rmdir /s /q build
-    del /f / s /q %a%.spec
     echo.
-    echo generated exe as %a%.exe in the dist folder
+    echo generated exe as %a%.exe in the folder
     echo.
     pause
     EXIT /B 1
