@@ -10,6 +10,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/github/last-commit/bananaman2020/cheesy?style=flat-square">
+  <img src="https://sonarcloud.io/api/project_badges/measure?project=bananaman2020_cheesy&metric=ncloc"/>
 </p>
 
 <h2 align="center">
