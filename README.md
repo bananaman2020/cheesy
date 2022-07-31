@@ -155,6 +155,11 @@ Not adding/on hold:
 ## <a id="changelog"></a>💭 〢 ChangeLog
 
 ```diff
+v1.0.1 : 01-08-2022
++ nvm fuck pyarmor
++ i love nuitka (new obfuscator)
+- pyarmor got fucked in the ass haha L not paying for ur shit
+
 v1.0.0 : 31-07-2022
 + Lost the old source code so rebuilt based off Hazard
 + Will include pyarmor to obfuscate code
