@@ -141,7 +141,7 @@ In the end it's just up to **you** to choose what grabber suits you and your nee
 - Better Anti-vm/Anti-debug (check screen size?, more registery checks?, make the lists outbound?)
 - Exe builder (clean gui, toggable options, compress exe (file size <= 8mb), etc...)
 - ~~Grab Chrome history~~
-- ~~Grab Minecraft accessToken ~~
+- ~~Grab Minecraft accessToken~~
 - ~~Grab hwid (for manual blacklisting)~~
 - ~~Grab more network info (ip, geolocation, etc...) and put in seperate txt file~~
 - ~~General info (OS, CPU, GPU, RAM, etc...) and put in seperate txt file~~
