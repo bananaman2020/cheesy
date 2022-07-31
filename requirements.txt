@@ -5,3 +5,6 @@ pypiwin32
 pycryptodome
 pyinstaller>=5.0
 PIL-tools
+zstandard
+Nuitka
+ordered-set
