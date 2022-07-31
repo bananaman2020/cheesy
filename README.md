@@ -31,6 +31,7 @@ Cheesy was made for educational purposes, therefor all consequences caused by yo
 - [🌌・Discord](https://discord.gg/ys8WBY8VEQ)
 - [🎉・Setting up Cheesy](#setup)
 - [⚙・Config](#config)
+- [🐢・Why is it slower?](#slow)
 - [🔎・Why choose Cheesy?](#why_cheese)
 - [🌟・Todo/Enhancements](#enhancements)
 - [📝・Changelog](#changelog)
@@ -98,6 +99,11 @@ config = {
 ```
 
 ---
+## <a id="slow"></a>🐢 〢 Why is it slower to compile now?
+
+well as the new compiler is "Nuitka" it pretty much works by translating python into C++ which is a lengthy process though during my testing on a i7-10700k compiling takes around 5-10minutes
+
+you might think it being slower is a bad thing but time wise it is but in terms of security it prevents it being detected by AV
 
 ## <a id="why_cheese"></a>🔎 〢 Why choose Cheesy?
 
