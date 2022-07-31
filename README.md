@@ -39,6 +39,7 @@ Cheesy was made for educational purposes, therefor all consequences caused by yo
 
 ```
 > Anti-vm/Anti-debug
+> Improved upon Rdimo's project and added Obfuscation using the Nuitka Project
 > Add to startup
 > Hides itself
 > Supports github.com/Rdimo/Discord-Webhook-Protector so webhook can't be deleted or spammed
