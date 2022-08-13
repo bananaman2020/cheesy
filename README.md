@@ -104,7 +104,9 @@ config = {
 
 well as the new compiler is "Nuitka" it pretty much works by translating python into C++ which is a lengthy process though during my testing on a i7-10700k compiling takes around 5-10minutes
 
-you might think it being slower is a bad thing but it allows it to be more hidden and anonymous which will help it not be noticed 
+This improves security by a lot. The reason I chose Nuitka is because (A) it's free (B) It obfuscates pretty well
+
+The only con to this is that dropping the file into virustotal or interzer analyze will display a flag that shows "Probably Packed (Suspicious)" This is because Nuitka's unpacker that's in the exe leaves a few traces to the obfuscation method. This is out of my control as it is simply way too complicated to change but for 99.9% of people this won't be an issue.
 
 ## <a id="why_cheese"></a>🔎 〢 Why choose Cheesy?
 
