@@ -165,6 +165,15 @@ Not adding/on hold:
 ## <a id="changelog"></a>💭 〢 ChangeLog
 
 ```diff
+v1.0.4 : 24-08-2022
++ Updated EXE Builder to use MSVC (new requirement)
++ Better hidden because of Microsoft's C++ Compiler. Less likely to trigger "Suspicious: Python Packed"
+
+v1.0.3 : 13-08-2022
++ Visual Studio Code added as blacklisted software
++ Injection changed to be more persistent 
+- Minor Update
+
 v1.0.2 : 01-08-2022
 + updated exe builder to play nicely with nuitka
 - im losing my sanity
