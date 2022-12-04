@@ -41,10 +41,10 @@ Cheesy was made for educational purposes, therefore all consequences caused by y
 
 ```
 > Anti-vm/Anti-debug
-> Improved upon Rdimo's project and added Obfuscation using the Nuitka Project
+> Improved upon Rdimo's project and added Obfuscation using MSVC
 > Add to startup
 > Hides itself
-> Supports github.com/Rdimo/Discord-Webhook-Protector so webhook can't be deleted or spammed
+> Supports a webhook protector but the old one got removed off github (looking for a replacement, suggestions welcome in the issues tab)
 > Options are configurable
 > Pretty Fast Even if it Was Made With Python
 > Windows Product Key & Build Info
@@ -109,6 +109,9 @@ This improves security by a lot. The reason I chose Nuitka is because (A) it's f
 
 The only con to this is that dropping the file into virustotal or interzer analyze will display a flag that shows "Probably Packed (Suspicious)" This is because Nuitka's unpacker that's in the exe leaves a few traces to the obfuscation method. This is out of my control as it is simply way too complicated to change but for 99.9% of people this won't be an issue.
 
+**UPDATE**
+I changed the requirement to be MSVC as it is faster and gets rid of the "Probably Packed (Suspicious) flag on AVs
+
 ## <a id="why_cheese"></a>🔎 〢 Why choose Cheesy?
 
 idk i did this so like piss off egirls and shit
@@ -165,6 +168,12 @@ Not adding/on hold:
 ## <a id="changelog"></a>💭 〢 ChangeLog
 
 ```diff
+v1.0.5 : 04-12-2022
++ Early Merry Christmas
++ Updated Readme
++ Cleaned up code
+- Lost Webhook Protector
+
 v1.0.4 : 24-08-2022
 + Updated EXE Builder to use MSVC (new requirement)
 + Better hidden because of Microsoft's C++ Compiler. Less likely to trigger "Suspicious: Python Packed"
