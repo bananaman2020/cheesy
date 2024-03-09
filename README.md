@@ -21,7 +21,7 @@ K78 ❌ tesco ✅
 </h2>
 
 <h2 align="center">
-**⚠️BIG NEWS:⚠️** \
+⚠️BIG NEWS:⚠️
 I've just released the biggest update ever. V3 is officialy LIVE 🎉
 </h2>
 
