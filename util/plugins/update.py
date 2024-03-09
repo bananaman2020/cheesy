@@ -82,12 +82,12 @@ def search_for_updates():
                 new_version_source = requests.get(
                     "https://github.com/bananaman2020/cheesy/archive/refs/heads/main.zip"
                 )
-                with open("Cheesy-main.zip", "wb") as zipfile:
+                with open("cheesy-main.zip", "wb") as zipfile:
                     zipfile.write(new_version_source.content)
-                with ZipFile("Cheesy-main.zip", "r") as filezip:
+                with ZipFile("cheesy-main.zip", "r") as filezip:
                     filezip.extractall()
-                os.remove("Cheesy-main.zip")
-                cwd = os.getcwd() + "\\Cheesy-main"
+                os.remove("cheesy-main.zip")
+                cwd = os.getcwd() + "\\cheesy-main"
                 shutil.copytree(cwd, os.getcwd(), dirs_exist_ok=True)
                 shutil.rmtree(cwd)
                 setTitle("Cheesy Nuker Update Complete!")
