@@ -23,6 +23,8 @@ K78 ❌ tesco ✅
 <h2 align="center">
 ⚠️BIG NEWS:⚠️
 I've just released the biggest update ever. V3 is officialy [LIVE]
+</h2>
+<h2 align="center">
  🎉 <a href=https://github.com/bananaman2020/cheesy/releases/tag/3.0.0>DOWNLOAD HERE</a> 🎉
 </h2>
 
