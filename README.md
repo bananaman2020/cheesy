@@ -33,6 +33,7 @@ Cheesy was made for educational purposes, therefore all consequences caused by y
 - [🎉・Setting up Cheesy](#setup)
 - [⚙・Config](#config)
 - [🐢・Why is it slower?](#slow)
+- [🤔・How does the compiler work?](#how_compiler)
 - [🔎・Why choose Cheesy?](#why_cheese)
 - [🌟・Todo/Enhancements](#enhancements)
 - [📝・Changelog](#changelog)
@@ -111,6 +112,10 @@ The only con to this is that dropping the file into virustotal or interzer analy
 
 **UPDATE**
 I changed the requirement to be MSVC as it is faster and gets rid of the "Probably Packed (Suspicious) flag on AVs
+
+## <a id="how_compiler"></a>🤔 〢 How does the compiler work?
+
+Nuitka is the main packer. It then passes the pack to MSVC to compile it in C++ which is faster and less likely to get detected.
 
 ## <a id="why_cheese"></a>🔎 〢 Why choose Cheesy?
 
