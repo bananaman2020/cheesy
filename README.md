@@ -193,6 +193,10 @@ Not adding/on hold:
 ## <a id="changelog"></a>💭 〢 ChangeLog
 
 ```diff
+v3.0.1 : 10-03-2024
++ Fixed Updater
+- Sanity
+
 v3.0.0 : 09-03-2024 (Massive Update, so massive that I skipped V2 entirely)
 + Back from the dead (real talk sorry for being gone so long.)
 + Added GUI
