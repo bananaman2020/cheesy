@@ -20,7 +20,7 @@ from bs4 import BeautifulSoup
 from colorama import Fore
 from time import sleep
 
-THIS_VERSION = "3.0.2"
+THIS_VERSION = "3.0.3"
 
 google_target_ver = 0
 edge_target_ver = 0
