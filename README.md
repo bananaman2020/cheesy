@@ -193,6 +193,10 @@ Not adding/on hold:
 ## <a id="changelog"></a>💭 〢 ChangeLog
 
 ```diff
+v3.0.3 : 10-03-2024
++ Fixed Token Grabber
+- More More Sanity
+
 v3.0.2 : 10-03-2024
 + Fixed Updater again..
 - More Sanity
